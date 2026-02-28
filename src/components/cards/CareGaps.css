@@ -1,0 +1,36 @@
+.cg { padding: var(--space-6); }
+.cg__header { display:flex; align-items:flex-start; justify-content:space-between; margin-bottom: var(--space-5); }
+.cg__title { font-family: var(--font-display); font-size: 20px; }
+.cg__sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.cg__filters { display:flex; gap:2px; background: var(--bg-subtle); border-radius: var(--radius-md); padding: 3px; border: 1px solid var(--border); }
+.cg__filter { background:none; border:none; font-family:var(--font-body); font-size:12px; font-weight:500; color:var(--text-muted); padding:4px 12px; border-radius:6px; cursor:pointer; transition: all var(--duration-fast); }
+.cg__filter:hover { color: var(--text-primary); }
+.cg__filter--active { background: white; color: var(--color-brand); box-shadow: var(--shadow-xs); }
+
+.cg__summary { display:flex; flex-direction:column; gap: var(--space-2); margin-bottom: var(--space-5); padding: var(--space-4); background: var(--bg-subtle); border-radius: var(--radius-lg); border: 1px solid var(--border); }
+.cg__summary-item { display:grid; grid-template-columns: 1fr 90px 28px; align-items:center; gap: var(--space-3); }
+.cg__summary-bar-wrap { height:6px; background: var(--border); border-radius: var(--radius-full); overflow:hidden; }
+.cg__summary-bar { height:100%; border-radius: var(--radius-full); transition: width 1s var(--ease-out); }
+.cg__summary-label { font-size:12px; color: var(--text-secondary); }
+.cg__summary-count { font-size:12px; font-weight:700; font-family: var(--font-mono); text-align:right; }
+
+.cg__list { display:flex; flex-direction:column; gap: var(--space-2); }
+.cg__item { display:flex; align-items:center; gap: var(--space-3); padding: var(--space-3) var(--space-4); border-radius: var(--radius-lg); border: 1px solid var(--border); background: var(--bg-card); animation: fadeInUp 300ms var(--ease-out) both; transition: all var(--duration-fast); }
+.cg__item:hover { box-shadow: var(--shadow-sm); background: var(--bg-card-hover); }
+.cg__item--critical { border-left: 3px solid var(--color-critical); }
+.cg__item--warning  { border-left: 3px solid var(--color-warning); }
+.cg__type-icon { font-size:16px; flex-shrink:0; }
+.cg__item-body { flex:1; min-width:0; }
+.cg__item-top { display:flex; align-items:center; gap: var(--space-2); margin-bottom: 3px; }
+.cg__measure { font-size:13px; font-weight:600; color: var(--text-primary); }
+.cg__item-meta { display:flex; align-items:center; gap: var(--space-2); flex-wrap:wrap; }
+.cg__patient { font-size:12px; color: var(--text-secondary); font-weight:500; }
+.cg__type, .cg__assignee { font-size:12px; color: var(--text-muted); }
+.cg__dot { color: var(--border-strong); }
+.cg__right { display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex-shrink:0; }
+.cg__due { font-size:11px; color: var(--text-muted); font-family: var(--font-mono); }
+.cg__due--overdue { color: var(--color-critical); font-weight:600; }
+.cg__status { font-size:10px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; }
+.cg__status--open        { color: var(--color-critical); }
+.cg__status--in-progress { color: var(--color-warning); }
+.cg__status--closed      { color: var(--color-stable); }

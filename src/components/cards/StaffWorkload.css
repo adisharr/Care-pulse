@@ -1,0 +1,42 @@
+.sw { padding: var(--space-6); }
+.sw__title { font-family: var(--font-display); font-size: 20px; margin-bottom: 2px; }
+.sw__sub { font-size: 12px; color: var(--text-muted); margin-bottom: var(--space-5); }
+
+.sw__staff-list { display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-6); }
+.sw__staff-card {
+  padding: var(--space-4); background: var(--bg-subtle);
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  animation: fadeInUp 300ms var(--ease-out) both;
+}
+.sw__staff-top { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-3); }
+.sw__staff-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  font-size: 12px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.sw__staff-info { flex: 1; }
+.sw__staff-name { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+.sw__staff-role { font-size: 11px; color: var(--text-muted); }
+.sw__overdue-badge {
+  background: var(--color-critical-bg); color: var(--color-critical);
+  border: 1px solid var(--color-critical-border);
+  font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: var(--radius-full);
+}
+
+.sw__staff-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--space-3); margin-bottom: var(--space-3); text-align: center; }
+.sw__stat-val { font-family: var(--font-display); font-size: 22px; color: var(--text-primary); }
+.sw__stat-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1px; }
+
+.sw__load-bar-wrap {}
+.sw__load-label { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); margin-bottom: 4px; }
+.sw__load-bar { height: 6px; background: var(--border); border-radius: var(--radius-full); overflow: hidden; }
+.sw__load-fill { height: 100%; border-radius: var(--radius-full); transition: width 1s var(--ease-out); }
+
+.sw__chart-title { font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-3); }
+
+.sw__tooltip {
+  background: white; border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: var(--space-3); font-family: var(--font-body); font-size: 12px; box-shadow: var(--shadow-md);
+}
+.sw__tooltip-label { color: var(--text-muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: var(--space-2); }
+.sw__tooltip-row { display: flex; justify-content: space-between; gap: var(--space-4); color: var(--text-secondary); }

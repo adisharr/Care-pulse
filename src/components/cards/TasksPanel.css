@@ -1,0 +1,42 @@
+.tp { padding: var(--space-6); }
+.tp__header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: var(--space-5); }
+.tp__title { font-family: var(--font-display); font-size: 20px; }
+.tp__sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.tp__progress { position: relative; display: flex; align-items: center; justify-content: center; }
+.tp__progress-label { position: absolute; font-size: 11px; font-weight: 700; color: var(--color-brand); font-family: var(--font-mono); }
+
+.tp__list { display: flex; flex-direction: column; gap: var(--space-2); }
+.tp__item {
+  display: flex; align-items: flex-start; gap: var(--space-3);
+  padding: var(--space-3); border-radius: var(--radius-md);
+  border: 1px solid var(--border); background: var(--bg-card);
+  animation: fadeInUp 300ms var(--ease-out) both; transition: all var(--duration-fast);
+}
+.tp__item:hover { background: var(--bg-subtle); }
+.tp__item--critical { border-left: 3px solid var(--color-critical); }
+.tp__item--warning  { border-left: 3px solid var(--color-warning); }
+.tp__item--done { opacity: 0.5; }
+
+.tp__checkbox {
+  width: 20px; height: 20px; border-radius: 5px; border: 2px solid var(--border-strong);
+  background: white; cursor: pointer; flex-shrink: 0; margin-top: 1px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--duration-fast);
+}
+.tp__checkbox:hover { border-color: var(--color-brand); }
+.tp__checkbox--checked { background: var(--color-brand); border-color: var(--color-brand); }
+.tp__checkbox-inner { width: 8px; height: 8px; border-radius: 2px; }
+.tp__checkbox-check { color: white; font-size: 11px; font-weight: 700; }
+
+.tp__item-body { flex: 1; }
+.tp__item-body--done .tp__item-title { text-decoration: line-through; }
+.tp__item-title { font-size: 13px; font-weight: 500; color: var(--text-primary); margin-bottom: 3px; }
+.tp__item-meta { display: flex; align-items: center; gap: var(--space-2); font-size: 11px; color: var(--text-muted); flex-wrap: wrap; }
+.tp__dot { color: var(--border-strong); }
+.tp__due { }
+.tp__due--urgent { color: var(--color-critical); font-weight: 600; }
+
+.tp__divider {
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--text-muted); padding: var(--space-2) 0; border-top: 1px solid var(--border); margin-top: var(--space-2);
+}
