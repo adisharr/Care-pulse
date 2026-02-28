@@ -83,27 +83,22 @@ Demonstrating state management and micro-interactions shows the interface is a w
 carepulse/
 ├── src/
 │   ├── components/
-│   │   ├── layout/Header.jsx       # Dark clinical header with role context
+│   │   ├── layout/Header.jsx       
 │   │   ├── cards/
-│   │   │   ├── KpiCards.jsx        # 4 top-level clinical KPIs
-│   │   │   ├── AlertsFeed.jsx      # Critical patient alerts
-│   │   │   ├── CareGaps.jsx        # Open quality measure gaps
-│   │   │   ├── StaffWorkload.jsx   # Role-based capacity view
-│   │   │   └── TasksPanel.jsx      # Interactive daily task list
+│   │   │   ├── KpiCards.jsx        
+│   │   │   ├── AlertsFeed.jsx      
+│   │   │   ├── CareGaps.jsx        
+│   │   │   ├── StaffWorkload.jsx  
+│   │   │   └── TasksPanel.jsx      
 │   │   └── tables/
-│   │       └── PatientTable.jsx    # Filterable risk-stratified patient list
-│   ├── data/clinicalData.js        # Structured clinical mock data
+│   │       └── PatientTable.jsx    
+│   ├── data/clinicalData.js      
 │   └── styles/
-│       ├── tokens.css              # Full design token system
-│       └── global.css              # Base styles + animations
+│       ├── tokens.css           
+│       └── global.css             
 └── README.md
 ```
 
 ---
 
-## Built By
 
-**Aditi Nitin Shardul** — UI/UX Developer  
-Portfolio project demonstrating clinical dashboard design for care coordination platforms.
-
-> Aligned with Ursamin's mission: helping care teams know exactly what's due next, for whom, and by whom.
